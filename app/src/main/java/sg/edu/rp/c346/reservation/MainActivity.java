@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     DatePicker dp;
     TimePicker tp;
     TextView errorOutput;
-    String where;
+    String where = "Non-Smoking";
 
     public void onRadioButtonClicked(View view) {
         boolean checked = ((RadioButton) view).isChecked();
@@ -63,7 +63,6 @@ public class MainActivity extends AppCompatActivity {
                 String name = "";
                 Integer phoneNumber = 0;
                 Integer group = 0;
-
 
 
                 String dayOfMonth = Integer.toString(dp.getDayOfMonth());
