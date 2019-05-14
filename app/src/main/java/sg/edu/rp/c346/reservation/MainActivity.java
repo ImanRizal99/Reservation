@@ -98,6 +98,8 @@ public class MainActivity extends AppCompatActivity {
                     final Toast toastGiven = Toast.makeText(context, output, duration);
                     toastGiven.show();
 
+                    errorOutput.setText("");
+
                 }
             }
 
