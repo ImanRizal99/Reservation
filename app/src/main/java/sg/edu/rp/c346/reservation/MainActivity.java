@@ -45,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
         phoneInput = findViewById(R.id.phoneText);
         groupInput = findViewById(R.id.groupText);
 
+        errorOutput = findViewById(R.id.errorOutput);
+
         submitButton = findViewById(R.id.submitButton);
         resetButton = findViewById(R.id.resetButton);
 
@@ -90,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 else {
                     Context context = getApplicationContext();
                     CharSequence output = String.format("Reservation is done at %s on %s\n" +
-                            "from %s with %s people at %s area",currentTime,date,name,group,where);
+                            "from %s with %s people at %s area. Thank You!",currentTime,date,name,group,where);
                     int duration = Toast.LENGTH_LONG;
 
                     final Toast toastGiven = Toast.makeText(context, output, duration);
